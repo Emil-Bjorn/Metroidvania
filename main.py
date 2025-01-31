@@ -5,6 +5,7 @@ import pygame
 from scripts.utils import load_image
 from scripts.entities import PhysicsEntity
 
+
 class Game:
     def __init__(self):
         pygame.init()
@@ -19,7 +20,7 @@ class Game:
 
         self.movement = [False, False]
         self.assets = {
-            'player' : load_image('data\images\entities\player.png')
+            'player' : load_image('\entities\player.png')
         }
 
         self.player = PhysicsEntity(self, 'player', (50,50), (8,15))
